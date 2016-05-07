@@ -5,10 +5,8 @@ namespace EasyHelper
 {
     /// <summary>
     /// It supports for converting from object to data type that you need as: int, long, float...
-    /// Author: Linh Pham
-    /// Email: duylinh191@gmail.com
     /// </summary>
-    public class Converter
+    public sealed class Converter
     {
         /// <summary>
         /// Convert object to string
