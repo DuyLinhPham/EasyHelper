@@ -35,7 +35,7 @@ namespace EasyHelper
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public string GetFirstCharacters(string value)
+        public static string GetFirstCharacters(string value)
         {
             string firstCharacters = string.Empty;
             if (string.IsNullOrWhiteSpace(value))

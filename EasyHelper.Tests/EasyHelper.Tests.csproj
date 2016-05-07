@@ -53,6 +53,12 @@
     <Compile Include="StringUtilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EasyHelper\EasyHelper.csproj">
+      <Project>{1e0050b1-2ef6-47f5-bbd0-25fe859be346}</Project>
+      <Name>EasyHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
