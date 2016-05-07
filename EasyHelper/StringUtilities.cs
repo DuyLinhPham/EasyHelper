@@ -81,20 +81,17 @@ namespace EasyHelper
                 string[] stringArray = value.Split(' ');
 
                 if (limit > stringArray.Length)
-                {
                     throw new Exception("limit can not bigger amout word in string");
-                }
-                if (limit != 0 && limit != stringArray.Length)
-                {                  
-                    for (int i = 0; i < limit; i++)
-                    {
-                        words += stringArray[i] + " ";
-                    }
 
-                    return words.Remove(words.Length-1);
+                if (limit == 0 || limit == stringArray.Length)
+                    return value;
+
+                for (int i = 0; i < limit; i++)
+                {
+                    words += stringArray[i] + " ";
                 }
 
-                return value;
+                return words.Remove(words.Length - 1);
             }
             return words;
         }
