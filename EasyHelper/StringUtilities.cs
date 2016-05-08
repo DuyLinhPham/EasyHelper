@@ -115,11 +115,11 @@ namespace EasyHelper
                 throw new Exception("Word to find cannot null");
             }
 
-            int startIndex = value.IndexOf(wordToFind, StringComparison.Ordinal);
+            int startIndex = value.IndexOf(wordToFind,StringComparison.Ordinal);
 
             if (startIndex >= 0)
             {
-                return startIndex + "," + (wordToFind.Length - 1);
+                return startIndex + "," + (startIndex + (wordToFind.Length - 1));
             }
 
             return "-1";
